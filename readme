@@ -1,6 +1,6 @@
-
 translate(width/2 - blob.pos.x, height/2 - blob.pos.y);
 >>>> makes Central Blob (aka Player) stay in the center of the screen all the time (so the world around it being moved)
+
 
 for (var i = blobs.length - 1; i >= 0; i--) {
     blobs[i].show();
@@ -9,3 +9,11 @@ for (var i = blobs.length - 1; i >= 0; i--) {
     }
 }
 >>>> how main blob eats others
+
+
+translate(width/2, height/2); 
+>>>> set world origin (0, 0) to 300, 300
+
+
+translate(-blob.pos.x, -blob.pos.y);
+>>>> keep player's blob at world origin 
